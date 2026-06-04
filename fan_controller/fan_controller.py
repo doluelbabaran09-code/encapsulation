@@ -25,3 +25,14 @@ class Fan:
         self.__radius = radius
     def set_color(self, color: str):
         self.__color = color
+
+    def display_status(self, fan_id):
+        status = "ON" if self.get_is_on() else "OFF"
+        speed_map = {1: "SLOW", 2: "MEDIUM", 3: "FAST"}
+        speed = speed_map.get(self.get_speed(), "UNKNOWN")
+        
+        print(f"===== Fan {fan_id} Status =====")
+        print(f" Power  : {'ON' if self.get_is_on() else 'OFF'}")
+        print(f" Speed  : {speed} (Level {self.get_speed()})")
+        print(f" Radius : {self.get_radius()} inches")
+        print(f" Color  : {self.get_color()}")
