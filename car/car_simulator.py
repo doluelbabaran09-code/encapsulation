@@ -19,3 +19,10 @@ class Car:
         return self.__year_model
     def get_make(self):
         return self.__make
+
+    def print_dashboard(self, action: str):
+        bar_count = self.__speed // 5
+        speed_bar = "█" * bar_count + "-" * (10 - bar_count)
+        print(f"{action:^12}] Speed: [{speed_bar}] {self.__speed: 02d} mph")
+    
+
