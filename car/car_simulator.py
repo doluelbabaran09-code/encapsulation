@@ -13,3 +13,9 @@ class Car:
         else:
             self.__speed = 0
     
+    def get_speed(self):
+        return self.__speed
+    def get_year_model(self):
+        return self.__year_model
+    def get_make(self):
+        return self.__make
