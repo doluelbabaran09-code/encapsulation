@@ -9,4 +9,11 @@ class Pets:
         self.__animal_type = animal_type
     def set_age(self, age: int):
         self.__age = age
- 
+
+    def get_name(self):
+        return self.__name
+    def get_anima_type(self):
+        return self.__animal_type
+    def get_age(self):
+        return self.__age
+    
