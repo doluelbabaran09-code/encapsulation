@@ -17,3 +17,12 @@ class Pets:
     def get_age(self):
         return self.__age
     
+    def display_pet_id(self):
+        print("\n" "="*40)
+        print(f" 🐾VIRTUAL PET ID CARD 🐾".center(40))
+        print("="*40)
+        print(f"║ Name    : {self.get_name()}")
+        print(f"║ Type    : {self.get_animal_type()}")
+        print(f"║ Age     : {self.get_age()} years old")
+        print("="*40 + "\n")
+        
